@@ -1,6 +1,11 @@
 const mongoose = require("mongoose");
+const {DB_USER,DB_PASSWORD} = require('../configExpress')
 
-const URI = "mongodb://localhost:27017/reservation";
+/**Remota*/
+const URI = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@cluster0.bwzbmmc.mongodb.net/`;
+
+/**Local */
+//const URI = "mongodb://localhost:27017/reservation";
 
 mongoose.set("strictQuery",false)
 

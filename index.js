@@ -1,10 +1,11 @@
 const express = require('express')
+const {PORT} = require('./configExpress')
 require('./drivers/conect-db')
 
 const app = express();
 
 //setters
-app.set('PORT',process.env.PORT || 3000);
+app.set('PORT',PORT);
 
 //middelware (use)
 app.use(express.json());
