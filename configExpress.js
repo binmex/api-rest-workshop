@@ -1,7 +1,7 @@
 // configExpress.js
-const PORT = process.env.PORT || 3000;
-const DB_USER = process.env.DB_USER || "binmex";
-const DB_PASSWORD = process.env.DB_PASSWORD || "8KXI3ymUarGDz1QF";
+const PORT = process.env.PORT;
+const DB_USER = process.env.DB_USER;
+const DB_PASSWORD = process.env.DB_PASSWORD;
 
 module.exports = {
   PORT,

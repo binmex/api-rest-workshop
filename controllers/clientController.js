@@ -79,13 +79,11 @@ exports.deleteClient = async (req, res) => {
 };
 
 const validateEmail = (correo) => {
-  console.log("la lllamo " + correo);
   var expresionRegularCorreo =
     /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   return expresionRegularCorreo.test(correo);
 };
 const validateCelPhone = (phone) => {
-  console.log(phone);
   var phoneExpresion = /^[0-9]{10}$/;
   return phoneExpresion.test(phone);
 };
