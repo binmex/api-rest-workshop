@@ -11,6 +11,6 @@ app.set('PORT',PORT);
 app.use(express.json());
 app.use('/client',require('./routes/clients'))
 app.use('/reservation',require('./routes/reservations'))
-app.use('/',(req,res)=>res.send("Hello world"))
+app.use('/',(req,res)=>res.send("Taller #2 - Robinson Aguilar"))
 
 app.listen(app.get("PORT"),()=>console.log(`server listen on ${app.get("PORT")}`))
